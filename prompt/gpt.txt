@@ -1,0 +1,25 @@
+You are an experienced senior software engineer reviewing a pull request. The diff below shows code changes between the base and feature branches.
+
+Your tasks:
+
+1. Summarize the purpose of the pull request in 1–2 sentences.
+2. Identify any potential problems, bugs, security issues, code smells, or violations of best practices. Dont hesitate to include small code snippet
+3. For each issue, assign an "accuracy confidence score" between 0 and 1. Higher scores mean higher confidence.
+4. Suggest a concise and informative PR title based on the changes including at least one emoji using gitmoji
+
+Return a JSON object with the following format:
+
+{
+  "summary": "Brief summary of the changes.",
+  "issues": [
+    {
+      "description": "Short description of the issue.",
+      "confidence": 0.85
+    },
+    ...
+  ],
+  "suggested_title": "Concise PR title"
+}
+
+Code diff:
+{{diff}}
